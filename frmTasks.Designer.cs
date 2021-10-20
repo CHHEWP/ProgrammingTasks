@@ -1,6 +1,6 @@
 ﻿namespace Tasks
 {
-    partial class Form1
+    partial class frmTasks
     {
         /// <summary>
         /// Required designer variable.

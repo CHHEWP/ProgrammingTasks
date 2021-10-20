@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Tasks
 {
-    public partial class Form1 : Form
+    public partial class frmTasks : Form
     {
-        public Form1()
+        public frmTasks()
         {
             InitializeComponent();
         }
@@ -105,8 +105,11 @@ namespace Tasks
         private void btnTask8_Click(object sender, EventArgs e)
         {
             listBox.Items.Clear();
+            // Create some suppliers that can be assigned to products
             var Supplier1 = new Supplier(123, "Supplier 1", "123 Main Street");
             var Supplier2 = new Supplier(456, "Supplier 2", "456 Main Street");
+            
+            //Create a list of products
             var Products = new List<Product>();
 
             var newprod = new Product()
@@ -144,6 +147,7 @@ namespace Tasks
             };
             Products.Add(newprod);
 
+            // Now, print some output to the listbox showing the product FullDetails
             foreach (var prod in Products)
                 AddALine(prod.FullDetails());
 
@@ -153,6 +157,9 @@ namespace Tasks
             listBox.Items.Clear();
             Person NewPerson = new Person();
             NewPerson.SetPerson(123, "Smith", "123 Main Street");
+
+            //I want to call SetPerson:
+            //NewPerson.SetPerson(123, "John", "Smith", "123 Main Street");
         }
         private void AddALine(string NewRow)
         {
