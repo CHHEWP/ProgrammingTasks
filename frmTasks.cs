@@ -20,22 +20,22 @@ namespace Tasks
         private void btnTask1_Click(object sender, EventArgs e)
         {
             listBox.Items.Clear();
+            AddALine("Hello world");
             // Add code here
         }
         private void btnTask2_Click(object sender, EventArgs e)
         {
             listBox.Items.Clear();
-            var list1 = new int[] { 1, 2, 3, 6, 8, 3, 9 };
-            var list2 = new int[] { 3, 2, 9, 3, 7 };
+            var list1 = new int[] { 52, 21, 27, 3, 62, 9 };
             // Add code here
         }
 
         private void btnTask3_Click(object sender, EventArgs e)
         {
             listBox.Items.Clear();
-            var list1 = new int[] { 1, 2, 3, 6, 8, 3, 9 };
-            var list2 = new int[] { 3, 2, 9, 3, 7 };
+            var list1 = new int[] { 52, 21, 27, 3, 62, 9 };
             // Add code here
+
         }
 
         private void btnTask4_Click(object sender, EventArgs e)
@@ -50,14 +50,17 @@ namespace Tasks
         private void btnTask5_Click(object sender, EventArgs e)
         {
             listBox.Items.Clear();
-            var list1 = new int[] { 52, 21, 27, 3, 62, 9 };
+            var list1 = new int[] { 1, 2, 3, 6, 8, 3, 9 };
+            var list2 = new int[] { 3, 2, 9, 3, 7 };
             // Add code here
+
         }
 
         private void btnTask6_Click(object sender, EventArgs e)
         {
             listBox.Items.Clear();
-            var list1 = new int[] { 52, 21, 27, 3, 62, 9 };
+            var list1 = new int[] { 1, 2, 3, 6, 8, 3, 9 };
+            var list2 = new int[] { 3, 2, 9, 3, 7 };
             // Add code here
         }
 
